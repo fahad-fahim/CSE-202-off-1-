@@ -17,11 +17,11 @@ public class Book
         price=Price;
         stock=Stock;
     }
-    public void setPrice(double price1)
+    public void setPrice(double Price)
     {
         price=Price;
     }
-    public void setStock(int stock1)
+    public void setStock(int Stock)
     {
         stock=Stock;
     }
