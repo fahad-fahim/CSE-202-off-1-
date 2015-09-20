@@ -5,35 +5,35 @@ public class Book
     private double price;
     private int stock;
 
-    public Book(String name1,Author author1)
+    public Book(String Name,Author aauthor)
     {
-        name=name1;
-        author=author1;
+        name=Name;
+        author=aauthor;
     }
-    public Book(String name1,Author author1, double price1, int stock1)
+    public Book(String Name,Author aauthor, double Price, int Stock)
     {
-        name=name1;
-        author=author1;
-        price=price1;
-        stock=stock1;
+        name=Name;
+        author=aauthor;
+        price=Price;
+        stock=Stock;
     }
     public void setPrice(double price1)
     {
-        price=price1;
+        price=Price;
     }
     public void setStock(int stock1)
     {
-        stock=stock1;
+        stock=Stock;
     }
-    public void borrowBook(int stock1)
+    public void borrowBook(int Stock)
     {
-        if(stock1>stock){
+        if(Stock>stock){
             System.out.println("Borrowing amount exceeds the current stock!");
         }
-        else stock-=stock1;
+        else stock-=Stock;
     }
-    public void returnBook(int stock1){
-        stock+=stock1;
+    public void returnBook(int Stock){
+        stock+=Stock;
     }
     public String getAuthorName()
     {
