@@ -7,29 +7,29 @@ public class Author
     {
 
     }
-    public Author(String name1)
+    public Author(String str_name)
     {
-        name=name1;
+        name=str_name;
     }
-    public Author(String name1, String email1)
+    public Author(String str_name, String str_email)
     {
-        name=name1;
-        email=email1;
-    }
-    public void print()
-    {
-        System.out.println(name+"at"+email);
-    }
-    public String getEmail()
-    {
-        return email;
+        name=str_name;
+        email=str_email;
     }
     public String getName()
     {
         return name;
     }
-    public void setEmail(String email1)
+    public String getEmail()
     {
-        email=email1;
+        return email;
+    }
+    public void setEmail(String str_email)
+    {
+        email=str_email;
+    }
+    public void print()
+    {
+        System.out.println(name+"at"+email);
     }
 }
